@@ -41,92 +41,92 @@ static char hours[25][7] = {
 
 static char hours_unit[25][8] = {
   "",
-  "heure",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
+  "heure\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
   "",
-  "heure",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
-  "heures",
+  "heure\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
+  "heures\n",
   ""
 };
 
 static char minutes[60][18] = {
-  "",                    // 0
-  "",                    // 1
-  "",                    // 2
-  "\ncinq",              // 3
-  "\ncinq",              // 4
-  "\ncinq",              // 5
-  "\ncinq",              // 6
-  "\ncinq",              // 7
-  "\ndix",               // 8
-  "\ndix",               // 9
-  "\ndix",               // 10
-  "\ndix",               // 11
-  "\ndix",               // 12
-  "\net quart",          // 13
-  "\net quart",          // 14
-  "\net quart",          // 15
-  "\net quart",          // 16
-  "\net quart",          // 17
-  "\nvingt",             // 18
-  "\nvingt",             // 19
-  "\nvingt",             // 20
-  "\nvingt",             // 21
-  "\nvingt",             // 22
-  "\nvingt cinq",        // 23
-  "\nvingt cinq",        // 24
-  "\nvingt cinq",        // 25
-  "\nvingt cinq",        // 26
-  "\nvingt cinq",        // 27
-  "\net demie",          // 28
-  "\net demie",          // 29
-  "\net demie",          // 30
-  "\net demie",          // 32
-  "\nmoins\nvingt cinq", // 33
-  "\nmoins\nvingt cinq", // 34
-  "\nmoins\nvingt cinq", // 35
-  "\nmoins\nvingt cinq", // 36
-  "\nmoins\nvingt cinq", // 37
-  "\nmoins\nvingt",      // 38
-  "\nmoins\nvingt",      // 39
-  "\nmoins\nvingt",      // 40
-  "\nmoins\nvingt",      // 41
-  "\nmoins\nvingt",      // 42
-  "\nmoins\nle quart",   // 43
-  "\nmoins\nle quart",   // 44
-  "\nmoins\nle quart",   // 45
-  "\nmoins\nle quart",   // 46
-  "\nmoins\nle quart",   // 47
-  "\nmoins\ndix",        // 48
-  "\nmoins\ndix",        // 49
-  "\nmoins\ndix",        // 50
-  "\nmoins\ndix",        // 51
-  "\nmoins\ndix",        // 52
-  "\nmoins\ncinq",       // 53
-  "\nmoins\ncinq",       // 54
-  "\nmoins\ncinq",       // 55
-  "\nmoins\ncinq",       // 56
-  "\nmoins\ncinq",       // 57
-  "",                    // 58
-  ""                     // 59
+  "",                  // 0
+  "",                  // 1
+  "",                  // 2
+  "cinq",              // 3
+  "cinq",              // 4
+  "cinq",              // 5
+  "cinq",              // 6
+  "cinq",              // 7
+  "dix",               // 8
+  "dix",               // 9
+  "dix",               // 10
+  "dix",               // 11
+  "dix",               // 12
+  "et quart",          // 13
+  "et quart",          // 14
+  "et quart",          // 15
+  "et quart",          // 16
+  "et quart",          // 17
+  "vingt",             // 18
+  "vingt",             // 19
+  "vingt",             // 20
+  "vingt",             // 21
+  "vingt",             // 22
+  "vingt cinq",        // 23
+  "vingt cinq",        // 24
+  "vingt cinq",        // 25
+  "vingt cinq",        // 26
+  "vingt cinq",        // 27
+  "et demie",          // 28
+  "et demie",          // 29
+  "et demie",          // 30
+  "et demie",          // 32
+  "moins\nvingt cinq", // 33
+  "moins\nvingt cinq", // 34
+  "moins\nvingt cinq", // 35
+  "moins\nvingt cinq", // 36
+  "moins\nvingt cinq", // 37
+  "moins\nvingt",      // 38
+  "moins\nvingt",      // 39
+  "moins\nvingt",      // 40
+  "moins\nvingt",      // 41
+  "moins\nvingt",      // 42
+  "moins\nle quart",   // 43
+  "moins\nle quart",   // 44
+  "moins\nle quart",   // 45
+  "moins\nle quart",   // 46
+  "moins\nle quart",   // 47
+  "moins\ndix",        // 48
+  "moins\ndix",        // 49
+  "moins\ndix",        // 50
+  "moins\ndix",        // 51
+  "moins\ndix",        // 52
+  "moins\ncinq",       // 53
+  "moins\ncinq",       // 54
+  "moins\ncinq",       // 55
+  "moins\ncinq",       // 56
+  "moins\ncinq",       // 57
+  "",                  // 58
+  ""                   // 59
 };
 
 static void handle_battery(BatteryChargeState charge_state) {
