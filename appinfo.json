@@ -1,0 +1,36 @@
+{
+  "uuid": "2ece7f94-88a3-4c1a-bb7d-3ee05ae70a5e",
+  "shortName": "Face",
+  "longName": "Face",
+  "companyName": "Gregoire Lejeune",
+  "versionCode": 2,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "font",
+        "name": "FONT_ASAP_REGULAR_30",
+        "file": "fonts/Asap-Regular.ttf"
+      },
+      {
+        "type": "font",
+        "name": "FONT_ASAP_REGULAR_14",
+        "file": "fonts/Asap-Regular.ttf"
+      },
+      {
+        "type": "font",
+        "name": "FONT_ASAP_BOLD_30",
+        "file": "fonts/Asap-Bold.ttf"
+      },
+      {
+        "type": "font",
+        "name": "FONT_FONTELLO_20",
+        "file": "fonts/fontello.ttf"
+      }
+    ]
+  }
+}
