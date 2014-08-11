@@ -68,38 +68,38 @@ static char hours_unit[25][8] = {
 };
 
 static char minutes[60][18] = {
-  "",                  // 0
-  "",                  // 1
-  "",                  // 2
-  "\ncinq",             // 3
-  "\ncinq",             // 4
-  "\ncinq",             // 5
-  "\ncinq",             // 6
-  "\ncinq",             // 7
-  "\ndix",              // 8
-  "\ndix",              // 9
-  "\ndix",              // 10
-  "\ndix",              // 11
-  "\ndix",              // 12
-  "\net quart",         // 13
-  "\net quart",         // 14
-  "\net quart",         // 15
-  "\net quart",         // 16
-  "\net quart",         // 17
-  "\nvingt",            // 18
-  "\nvingt",            // 19
-  "\nvingt",            // 20
-  "\nvingt",            // 21
-  "\nvingt",            // 22
-  "\nvingt cinq",       // 23
-  "\nvingt cinq",       // 24
-  "\nvingt cinq",       // 25
-  "\nvingt cinq",       // 26
-  "\nvingt cinq",       // 27
-  "\net demi",          // 28
-  "\net demi",          // 29
-  "\net demi",          // 30
-  "\net demi",          // 32
+  "",                    // 0
+  "",                    // 1
+  "",                    // 2
+  "\ncinq",              // 3
+  "\ncinq",              // 4
+  "\ncinq",              // 5
+  "\ncinq",              // 6
+  "\ncinq",              // 7
+  "\ndix",               // 8
+  "\ndix",               // 9
+  "\ndix",               // 10
+  "\ndix",               // 11
+  "\ndix",               // 12
+  "\net quart",          // 13
+  "\net quart",          // 14
+  "\net quart",          // 15
+  "\net quart",          // 16
+  "\net quart",          // 17
+  "\nvingt",             // 18
+  "\nvingt",             // 19
+  "\nvingt",             // 20
+  "\nvingt",             // 21
+  "\nvingt",             // 22
+  "\nvingt cinq",        // 23
+  "\nvingt cinq",        // 24
+  "\nvingt cinq",        // 25
+  "\nvingt cinq",        // 26
+  "\nvingt cinq",        // 27
+  "\net demie",          // 28
+  "\net demie",          // 29
+  "\net demie",          // 30
+  "\net demie",          // 32
   "\nmoins\nvingt cinq", // 33
   "\nmoins\nvingt cinq", // 34
   "\nmoins\nvingt cinq", // 35
@@ -125,8 +125,8 @@ static char minutes[60][18] = {
   "\nmoins\ncinq",       // 55
   "\nmoins\ncinq",       // 56
   "\nmoins\ncinq",       // 57
-  "",                  // 58
-  ""                   // 59
+  "",                    // 58
+  ""                     // 59
 };
 
 static void handle_battery(BatteryChargeState charge_state) {
@@ -184,13 +184,13 @@ static void do_init(void) {
   GRect frame = layer_get_frame(root_layer);
 
   // Init the text layer used to show the time
-  time_layer_hour = text_layer_create(GRect(0, 20, frame.size.w /* width */, frame.size.h - 20/* height */));
+  time_layer_hour = text_layer_create(GRect(0, 22, frame.size.w /* width */, frame.size.h - 22/* height */));
   text_layer_set_text_color(time_layer_hour, GColorWhite);
   text_layer_set_background_color(time_layer_hour, GColorClear);
   text_layer_set_text_alignment(time_layer_hour, GTextAlignmentLeft);
   text_layer_set_font(time_layer_hour, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ASAP_BOLD_30)));
 
-  time_layer_min = text_layer_create(GRect(0, 50, frame.size.w /* width */, frame.size.h - 50/* height */));
+  time_layer_min = text_layer_create(GRect(0, 52, frame.size.w /* width */, frame.size.h - 52/* height */));
   text_layer_set_text_color(time_layer_min, GColorWhite);
   text_layer_set_background_color(time_layer_min, GColorClear);
   text_layer_set_text_alignment(time_layer_min, GTextAlignmentLeft);
