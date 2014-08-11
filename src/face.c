@@ -236,6 +236,7 @@ static void do_deinit(void) {
   tick_timer_service_unsubscribe();
   battery_state_service_unsubscribe();
   bluetooth_connection_service_unsubscribe();
+  bluetooth_connected = bluetooth_connection_service_peek(); 
   text_layer_destroy(time_layer_hour);
   text_layer_destroy(time_layer_min);
   text_layer_destroy(connection_layer_icon);
