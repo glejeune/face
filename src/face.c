@@ -184,32 +184,32 @@ static void do_init(void) {
   GRect frame = layer_get_frame(root_layer);
 
   // Init the text layer used to show the time
-  time_layer_hour = text_layer_create(GRect(0, 22, frame.size.w /* width */, frame.size.h - 22/* height */));
+  time_layer_hour = text_layer_create(GRect(0, 25, frame.size.w /* width */, frame.size.h - 25/* height */));
   text_layer_set_text_color(time_layer_hour, GColorWhite);
   text_layer_set_background_color(time_layer_hour, GColorClear);
   text_layer_set_text_alignment(time_layer_hour, GTextAlignmentLeft);
   text_layer_set_font(time_layer_hour, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ASAP_BOLD_30)));
 
-  time_layer_min = text_layer_create(GRect(0, 52, frame.size.w /* width */, frame.size.h - 52/* height */));
+  time_layer_min = text_layer_create(GRect(0, 55, frame.size.w /* width */, frame.size.h - 55/* height */));
   text_layer_set_text_color(time_layer_min, GColorWhite);
   text_layer_set_background_color(time_layer_min, GColorClear);
   text_layer_set_text_alignment(time_layer_min, GTextAlignmentLeft);
   text_layer_set_font(time_layer_min, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ASAP_REGULAR_30)));
 
-  connection_layer_icon = text_layer_create(GRect(5, 0, /* width */ frame.size.w / 2 - 5, 20 /* height */));
+  connection_layer_icon = text_layer_create(GRect(5, 0, /* width */ frame.size.w / 2 - 5, 25 /* height */));
   text_layer_set_text_color(connection_layer_icon, GColorWhite);
   text_layer_set_background_color(connection_layer_icon, GColorClear);
   text_layer_set_text_alignment(connection_layer_icon, GTextAlignmentLeft);
   text_layer_set_font(connection_layer_icon, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_FONTELLO_20)));
   handle_bluetooth(bluetooth_connection_service_peek());
 
-  battery_layer_icon = text_layer_create(GRect(frame.size.w / 2, 0, /* width */ frame.size.w / 2 - 30, 20 /* height */));
+  battery_layer_icon = text_layer_create(GRect(frame.size.w / 2, 0, /* width */ frame.size.w / 2 - 30, 25 /* height */));
   text_layer_set_text_color(battery_layer_icon, GColorWhite);
   text_layer_set_background_color(battery_layer_icon, GColorClear);
   text_layer_set_text_alignment(battery_layer_icon, GTextAlignmentRight);
   text_layer_set_font(battery_layer_icon, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_FONTELLO_20)));
 
-  battery_layer_txt = text_layer_create(GRect(frame.size.w - 30, 3, 30, 20));
+  battery_layer_txt = text_layer_create(GRect(frame.size.w - 30, 3, 30, 25));
   text_layer_set_text_color(battery_layer_txt, GColorWhite);
   text_layer_set_background_color(battery_layer_txt, GColorClear);
   text_layer_set_text_alignment(battery_layer_txt, GTextAlignmentCenter);
